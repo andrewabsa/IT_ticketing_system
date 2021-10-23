@@ -1,0 +1,2 @@
+FLASK_APP=it_buddy
+FLASK_ENV=development
