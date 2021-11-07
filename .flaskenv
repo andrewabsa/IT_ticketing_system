@@ -1,2 +1,2 @@
-FLASK_APP=it_buddy
+FLASK_APP=it_buddy/main:create_app
 FLASK_ENV=development
