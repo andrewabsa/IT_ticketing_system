@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from marshmallow.exceptions import ValidationError
 
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 ma = Marshmallow()
 
 def create_app():

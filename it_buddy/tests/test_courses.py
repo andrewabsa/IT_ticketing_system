@@ -17,8 +17,8 @@ class TestCourses(unittest.TestCase):
         data = response.get_json()
 
         self.assertEqual(response.status_code, 200)
-        self.assertIsInstance(data, list)
+        self.assertIn(b'<h1>Course Index<h1>', response data)
 
      def test_create_bad_course(self):
-        response = self.client.post("/courses/", json={"course_name": ""})
+        response = self.client.post("/courses/", data={"course_name": ""})
         self.assertEqual(response.status_code, 400)
